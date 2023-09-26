@@ -4,10 +4,11 @@ import { Layout_DemoList } from "./Layout_DemoList";
 import { ModuleDef } from "../../scripts/ModuleDef";
 import { UI_HUD } from "../ui_hud/UI_HUD";
 import { tgxUIController, tgxUIMgr, tgxUIWaiting } from "../../core_tgx/tgx";
+import { SceneDef } from "../../scripts/SceneDef";
 
 const DemoList = [
-    { bundle: ModuleDef.DEMO_TANK, entryScene: 'tank_game' },
-    { bundle: ModuleDef.DEMO_ROOSTER, entryScene: 'rooster_jump' },
+    { bundle: ModuleDef.DEMO_TANK, entryScene: SceneDef.TANK_GAME },
+    { bundle: ModuleDef.DEMO_ROOSTER, entryScene: SceneDef.ROOSTER_JUMP },
 ];
 
 export class UI_DemoList extends tgxUIController {
